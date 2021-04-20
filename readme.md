@@ -90,7 +90,3 @@ Input 4
         * DE5                      0
         * Allotted Delivery Executive: DE3
 
-Delivery History
-Output
-TRIP EXECUTIVE RESTAURANT DESTINATION POINT ORDERS PICK-UP_TIME DELIVERY_TIME DELIVERY CHARGE 1 DE1 A D 1 9:15 9:45 50 2 DE2 B A 2 10:15 10:45 55 3 DE3 D C 1 10:50 11:20 50 Total earned
-Executive Allowance Deliver Charges Total DE1 10 50 60 DE2 10 55 65 DE3 10 50 60

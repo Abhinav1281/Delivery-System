@@ -31,7 +31,7 @@ public class booking {
         System.out.println("Enter Dest.");
         int d=sc.nextInt();
         System.out.println("Enter Booking time");
-        double t=sc.nextInt();
+        double t=sc.nextDouble();
         System.out.println("Enter Booking id");
         int id=sc.nextInt();
         
@@ -51,14 +51,14 @@ public class booking {
     {
         for(int i=0;i<deliveryBoy.size();i++)
         {
-            int r=deliveryBoy.get(i).getRest();
+           int r=deliveryBoy.get(i).getRest();
             if(r==val)
             {
                 int a=deliveryBoy.get(i).getCurrentDeli();
                 if(a<=allowed)
                 {
                     double t=deliveryBoy.get(i).getBookTime();
-                    if((t+0.3)<time)
+                    if(time<(t+0.15))
                         return deliveryBoy.get(i);
                 }
             }
@@ -77,14 +77,9 @@ public class booking {
     //assigning Executive
     static void assignExec(int r,int d,double t,DeliveryBoy b,int id)
     {
-        if(b.getRest()==r)
-        {
-            if(b.getCurrentDeli()<allowed)
-            {
-                if((b.getBookTime()+0.3)<=t)
-                    b.order(r, d, t,id);
-            }
-        }
+        displayDelivery();
+        assignedTo(b);
+        b.order(r, d, t, id);
     }
 
     static void deliveryDone(int id,int boyIndex)
@@ -97,13 +92,35 @@ public class booking {
         }
     }
 
+    static void allOrderDone()
+    {
+        for(int i=0;i<deliveryBoy.size();i++)
+        {
+            deliveryBoy.get(i).overrideOrderDone();
+        }
+    }
     //displaying executive info
-    void display()
+    static void display()
     {
         for(int i=0;i<deliveryBoy.size();i++)
         {
             deliveryBoy.get(i).displayInfo();
             System.out.println();
         }
+    }
+
+    static void displayDelivery()
+    {
+        System.out.println("\nAVAILABLE EXEC:\nNAME\tINCOME EARNED");
+        for(int i=0;i<deliveryBoy.size();i++)
+        {
+            deliveryBoy.get(i).deliveryList();
+            System.out.println();
+        }
+    }
+
+    static void assignedTo(DeliveryBoy b)
+    {
+        System.out.println(b.dname+" on order "+b.getCurrentDeli());
     }
 }
