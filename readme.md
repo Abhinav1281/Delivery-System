@@ -19,69 +19,74 @@ Questions :
 2. Write a function to assign delivery executive
 3. Write a function that can display delivery executive's activity thus far.
 This should contain commision earned , allowance earned(calculated based on criteria 2 and 3).
+----
 Input 1
-Customer ID: 1
-Restaurant: A
-Destionation Point : D
-Time : 9.00 AM
-Output
-Booking ID : 1
-Available Executives :
-Executive     Delivery Charge Earned    
-DE1                      0
-DE2                      0
-DE3                      0
-DE4                      0
-DE5                      0
-Allotted Delivery Executive: DE1
+* Customer ID: 1
+* Restaurant: A
+* Destionation Point : D
+* Time : 9.00 AM
+* Output
+    * Booking ID : 1
+    * Available Executives :
+    * Executive     Delivery Charge Earned    
+        * DE1                      0
+        * DE2                      0
+        * DE3                      0
+        * DE4                      0
+        * DE5                      0
+        * Allotted Delivery Executive: DE1
+
+----
 
 Input 2
-Customer ID: 2
-Restaurant : B
-Destination Point : A
-Time : 10.00 AM
-Output
-Booking ID : 2
-Available Executives :
-Executive     Delivery Charge Earned    
-DE1                      50
-DE2                      0
-DE3                      0
-DE4                      0
-DE5                      0
-Allotted Delivery Executive: DE2
+* Customer ID: 2
+* Restaurant : B
+* Destination Point : A
+* Time : 10.00 AM
+* Output
+    * Booking ID : 2
+    * Available Executives :
+    * Executive     Delivery Charge Earned    
+        * DE1                      50
+        * DE2                      0
+        * DE3                      0
+        * DE4                      0
+        * DE5                      0
+        * Allotted Delivery Executive: DE2
 
+----
 Input 3
-Customer ID: 3
-Restaurant : B
-Destionation Point : A
-Time : 10.10 AM
-Output
-Booking ID : 3
-Available Executives :
-Executive     Delivery Charge Earned
-DE1                      50
-DE2                      50
-DE3                      0
-DE4                      0
-DE5                      0
-Allotted Delivery Executive: DE2 (because same location within 15mins)
+* Customer ID: 3
+* Restaurant : B
+* Destionation Point : A
+* Time : 10.10 AM
+* Output
+    * Booking ID : 3
+    * Available Executives :
+    * Executive     Delivery Charge Earned
+        * DE1                      50
+        * DE2                      50
+        * DE3                      0
+        * DE4                      0
+        * DE5                      0
+        * Allotted Delivery Executive: DE2 (because same location within 15mins)
 
+----
 Input 4
-Customer ID: 3
-Restaurant : D
-Destionation Point : C
-Time : 10.35 AM
-Output
-Booking ID : 3
-Available Executives :
-Executive     Delivery Charge Earned
-DE1                      50
-DE2                      55
-DE3                      0
-DE4                      0
-DE5                      0
-Allotted Delivery Executive: DE3
+* Customer ID: 3
+* Restaurant : D
+* Destionation Point : C
+* Time : 10.35 AM
+* Output
+    * Booking ID : 3
+    * Available Executives :
+    * Executive     Delivery Charge Earned
+        * DE1                      50
+        * DE2                      55
+        * DE3                      0
+        * DE4                      0
+        * DE5                      0
+        * Allotted Delivery Executive: DE3
 
 Delivery History
 Output
